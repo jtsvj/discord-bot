@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from discord.utils import get
 
-TOKEN = "OTkyNjc5MjE2Nzg3MjQzMDg4.GBxuxx.-hJnMKGCzkuT_X_TaDOCtrt0GiG3_eSeGSaJvU"
+TOKEN = "YOUR TOKEN GOES HERE"
 
 intents = discord.Intents.all()
 intents.message_content = True
@@ -36,7 +36,7 @@ async def remRole(ctx, user : discord.Member, *, role : discord.Role):
         await user.remove_roles(role)
         await ctx.send(f"{role} role is removed from {user.mention}")
 
-@bot.command(name='pizda')
+@bot.command(name='erase_roles')
 async def remove_all_roles(ctx):
     for member in bot.get_all_members():
 
