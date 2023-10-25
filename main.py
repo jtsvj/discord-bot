@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from discord.utils import get
 
+# You can find your token at 'https://discord.com/developers/applications' 
 TOKEN = "YOUR TOKEN GOES HERE"
 
 intents = discord.Intents.all()
